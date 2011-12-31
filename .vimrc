@@ -64,6 +64,10 @@ autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
 autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 
 "shortcuts
+
+" change the mapleader from \ to ,
+let mapleader=","
+
 "Map escape key to jj -- much faster
 imap jj <esc>
 imap ?? <?=?><esc>hi
@@ -72,6 +76,9 @@ imap ?? <?=?><esc>hi
 "http://vimcasts.org/episodes/bubbling-text/
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
+
+"clear search
+nmap <silent> ,/ :nohlsearch<CR>
 
 "Bubble multiple lines
 vmap <C-Up> xkP`[V`]
