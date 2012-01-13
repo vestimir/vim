@@ -55,6 +55,7 @@ set wildignore=*.swp,*.bak,*.pyc
 set title
 set visualbell
 set noerrorbells
+set t_vb=
 
 set nobackup
 set noswapfile
