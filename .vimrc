@@ -30,6 +30,7 @@ set guioptions-=LlRrb
 
 " colorscheme lombard
 colorscheme solarized
+set background=dark
 
 "sets tabexpand to spaces
 set linespace=4
