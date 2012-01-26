@@ -28,7 +28,8 @@ set guioptions+=b
 set guioptions+=LlRrb
 set guioptions-=LlRrb
 
-colorscheme lombard
+" colorscheme lombard
+colorscheme solarized
 
 "sets tabexpand to spaces
 set linespace=4
