@@ -65,6 +65,7 @@ set noswapfile
 autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
 autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
 autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+autocmd FileType php set ai sw=4 sts=4 et
 
 "shortcuts
 
@@ -73,7 +74,9 @@ let mapleader=","
 
 "Map escape key to jj -- much faster
 imap jj <esc>
+
 imap ?? <?=?><esc>hi
+imap %% <%=  %><esc>hhi
 
 "Move
 "http://vimcasts.org/episodes/bubbling-text/
