@@ -28,9 +28,13 @@ set guioptions+=b
 set guioptions+=LlRrb
 set guioptions-=LlRrb
 
-" colorscheme lombard
-colorscheme solarized
-set background=dark
+if !has('gui_running')
+  set t_Co=256
+  colorscheme railscasts
+else
+  colorscheme solarized
+  set background=dark
+endif
 
 "sets tabexpand to spaces
 set linespace=4
