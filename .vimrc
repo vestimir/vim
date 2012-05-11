@@ -82,6 +82,16 @@ imap jj <esc>
 imap ?? <?=?><esc>hi
 imap %% <%=  %><esc>hhi
 
+"Tab navigation like firefox
+:nmap <C-S-tab> :tabprevious<CR>
+:nmap <C-tab> :tabnext<CR>
+:map <C-S-tab> :tabprevious<CR>
+:map <C-tab> :tabnext<CR>
+:imap <C-S-tab> <Esc>:tabprevious<CR>i
+:imap <C-tab> <Esc>:tabnext<CR>i
+:nmap <C-t> :tabnew<CR>
+:imap <C-t> <Esc>:tabnew<CR>
+
 "Move
 "http://vimcasts.org/episodes/bubbling-text/
 nmap <C-Up> ddkP
@@ -95,7 +105,7 @@ vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
-map <F2> :NERDTreeToggle<CR>
+map <F2> :NERDTreeMirrorToggle<CR>
 
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
