@@ -110,10 +110,6 @@ map <F2> :NERDTreeMirrorToggle<CR>
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
-"Map Nerdcommenter toggle to Leader + c
-map ,c :call NERDComment(0,"toggle")<CR>
-vmap ,c :call NERDComment(0,"toggle")<CR>
-
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
