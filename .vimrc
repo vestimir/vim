@@ -121,7 +121,6 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 
-call Pl#Theme#InsertSegment('pwd', 'after', 'fileformat')
 call Pl#Theme#RemoveSegment('fileformat')
 
 " Source the vimrc file after saving it. This way, you don't have to reload
