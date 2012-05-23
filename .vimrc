@@ -73,7 +73,7 @@ autocmd FileType php set ai sw=4 sts=4 et
 
 "shortcuts
 
-" change the mapleader from \ to ,
+"change the mapleader from \ to ,
 let mapleader=","
 
 "Map escape key to jj -- much faster
