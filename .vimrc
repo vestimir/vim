@@ -21,6 +21,7 @@ set nowrap
 "set the lines only if gui is running
 if has('gui_running')
   set lines=50 columns=180
+endif
 
 set mousem=popup
 set mousehide "Hide mouse when typing
