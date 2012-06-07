@@ -17,7 +17,7 @@ set copyindent
 set showmatch     " set show matching parenthesis
 set foldenable
 set nowrap
-set lines=50 columns=180
+"set lines=50 columns=180
 
 set mousem=popup
 set mousehide "Hide mouse when typing
