@@ -14,16 +14,15 @@ set number
 set smartindent
 set autoindent
 set copyindent
-set showmatch     " set show matching parenthesis
+set showmatch " set show matching parenthesis
 set foldenable
 set nowrap
-"set lines=50 columns=180
 
 set mousem=popup
 set mousehide "Hide mouse when typing
 
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
+set guioptions-=m "remove menu bar
+set guioptions-=T "remove toolbar
 set guioptions+=b
 set guioptions+=LlRrb
 set guioptions-=LlRrb
@@ -42,6 +41,9 @@ set et
 set sw=4
 set sts=4
 set smarttab
+
+autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+autocmd FileType php set ai sw=4 sts=4 et
 
 "Split windows below the current window.
 set splitbelow
@@ -68,8 +70,6 @@ set noswapfile
 
 autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
 autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
-autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
-autocmd FileType php set ai sw=4 sts=4 et
 
 "shortcuts
 
@@ -106,6 +106,9 @@ vmap <C-Down> xp`[V`]
 
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
 map <F2> :NERDTreeMirrorToggle<CR>
+
+"toggle paste mode
+set pastetoggle=<F3>
 
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
