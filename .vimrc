@@ -107,6 +107,9 @@ vmap <C-Down> xp`[V`]
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
 map <F2> :NERDTreeMirrorToggle<CR>
 
+"Toggle Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 "toggle paste mode
 set pastetoggle=<F3>
 
