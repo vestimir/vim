@@ -5,3 +5,9 @@
     cd ./vim
     git submodule init
     git submodule update
+
+#Dependencies
+[Ctags](http://ctags.sourceforge.net/)
+
+On Mac run: 
+    brew install ctags
