@@ -92,13 +92,13 @@ imap %% <%=  %><esc>hhi
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
 
+"clear search
+nmap <silent> ,/ :nohlsearch<CR>
+
 "Move
 "http://vimcasts.org/episodes/bubbling-text/
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
-
-"clear search
-nmap <silent> ,/ :nohlsearch<CR>
 
 "Bubble multiple lines
 vmap <C-Up> xkP`[V`]
@@ -112,6 +112,9 @@ nmap <F8> :TagbarToggle<CR>
 
 "toggle paste mode
 set pastetoggle=<F3>
+
+"toggle yankring
+map ,r <Esc>:YRShow<CR>
 
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
