@@ -9,5 +9,6 @@
 #Dependencies
 [Ctags](http://ctags.sourceforge.net/)
 
-On Mac run: 
-    brew install ctags
+On Mac: brew install ctags
+
+On Fedora: yum install ctags
