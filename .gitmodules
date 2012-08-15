@@ -58,6 +58,3 @@
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
-[submodule "bundle/golden-ratio"]
-	path = bundle/golden-ratio
-	url = https://github.com/roman/golden-ratio.git
