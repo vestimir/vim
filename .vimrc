@@ -116,6 +116,9 @@ set pastetoggle=<F3>
 "toggle yankring
 map ,r <Esc>:YRShow<CR>
 
+"toggle CtrlP
+let g:ctrlp_map = ',e'
+
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
