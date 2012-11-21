@@ -118,9 +118,13 @@ map ,r <Esc>:YRShow<CR>
 
 "toggle CtrlP
 let g:ctrlp_map = ',e'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
+
+"open new empty split
+map ,s :vnew<CR>
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
