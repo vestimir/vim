@@ -82,6 +82,9 @@ imap jj <esc>
 imap ?? <?=?><esc>hi
 imap %% <%=  %><esc>hhi
 
+"Align => with ,ta
+vmap ,ta :Align =><CR>
+
 "Tab navigation like firefox
 :nmap <C-S-tab> :tabprevious<CR>
 :nmap <C-tab> :tabnext<CR>
