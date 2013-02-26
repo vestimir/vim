@@ -33,7 +33,7 @@ if !has('gui_running')
 else
   colorscheme solarized
   set background=dark
-  set guifont=Source_Code_Pro
+  " set guifont=Source_Code_Pro
 endif
 
 "sets tabexpand to spaces
