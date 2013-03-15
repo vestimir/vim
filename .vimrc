@@ -31,9 +31,9 @@ if !has('gui_running')
   set t_Co=256
   colorscheme railscasts
 else
-  colorscheme solarized
-  set background=dark
-  " set guifont=Source_Code_Pro
+  " colorscheme solarized
+  " set background=dark
+  colo elrodeo
 endif
 
 "sets tabexpand to spaces
