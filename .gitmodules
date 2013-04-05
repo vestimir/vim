@@ -91,3 +91,6 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-multiedit"]
+	path = bundle/vim-multiedit
+	url = https://github.com/hlissner/vim-multiedit.git
