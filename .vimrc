@@ -127,6 +127,8 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
+let html_no_rendering=1
+
 "open new empty split
 map ,s :vnew<CR>
 
