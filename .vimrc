@@ -33,7 +33,7 @@ if !has('gui_running')
 else
   " colorscheme solarized
   " set background=dark
-  colo Tomorrow-Night-Eighties
+  colo Tomorrow-Night
 endif
 
 "sets tabexpand to spaces
