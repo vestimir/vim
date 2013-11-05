@@ -79,15 +79,6 @@
 [submodule "bundle/vim-colorscheme-elrodeo"]
 	path = bundle/vim-colorscheme-elrodeo
 	url = https://github.com/chmllr/vim-colorscheme-elrodeo.git
-[submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
-	url = https://github.com/guns/vim-clojure-static.git
-[submodule "bundle/vim-classpath"]
-	path = bundle/vim-classpath
-	url = https://github.com/tpope/vim-classpath.git
-[submodule "bundle/vim-fireplace"]
-	path = bundle/vim-fireplace
-	url = https://github.com/tpope/vim-fireplace.git
 [submodule "bundle/vim-multiedit"]
 	path = bundle/vim-multiedit
 	url = https://github.com/hlissner/vim-multiedit.git
