@@ -1,9 +1,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
@@ -79,12 +76,12 @@
 [submodule "bundle/vim-colorscheme-elrodeo"]
 	path = bundle/vim-colorscheme-elrodeo
 	url = https://github.com/chmllr/vim-colorscheme-elrodeo.git
-[submodule "bundle/vim-multiedit"]
-	path = bundle/vim-multiedit
-	url = https://github.com/hlissner/vim-multiedit.git
 [submodule "bundle/vim-startify"]
 	path = bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
 [submodule "bundle/vim-liquid"]
 	path = bundle/vim-liquid
 	url = https://github.com/tpope/vim-liquid.git
+[submodule "bundle/vim-seek"]
+	path = bundle/vim-seek
+	url = https://github.com/goldfeld/vim-seek.git

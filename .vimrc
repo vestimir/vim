@@ -145,6 +145,10 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 
 call Pl#Theme#RemoveSegment('fileformat')
 
+" Reconfigure vim-seek search key
+let g:SeekKey = '<Space>'
+let g:SeekBackKey = '<S-Space>'
+
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
 if has("autocmd")
