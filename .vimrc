@@ -31,9 +31,7 @@ if !has('gui_running')
   set t_Co=256
   colorscheme railscasts
 else
-  " colorscheme solarized
-  " set background=dark
-  colo Tomorrow-Night
+  colo codeschool
 endif
 
 "sets tabexpand to spaces
@@ -109,6 +107,7 @@ vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
+let g:NERDTreeWinPos = "right"
 map <F2> :NERDTreeMirrorToggle<CR>
 
 "Toggle Tagbar
