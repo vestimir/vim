@@ -151,6 +151,9 @@ call Pl#Theme#RemoveSegment('fileformat')
 let g:SeekKey = '<Space>'
 let g:SeekBackKey = '<S-Space>'
 
+" Config Switch
+nnoremap - :Switch<CR>
+
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
 if has("autocmd")
