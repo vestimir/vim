@@ -126,6 +126,13 @@ let g:ctrlp_map = ',e'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <leader>t :CtrlPTag<cr>
 
+"SplitJoin map
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
+
+"Switch map
+nnoremap - :Switch<cr>
+
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
