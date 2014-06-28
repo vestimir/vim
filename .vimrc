@@ -31,6 +31,7 @@ if !has('gui_running')
   set t_Co=256
   colorscheme railscasts
 else
+  set guifont=Menlo\ Regular:h14
   colo codeschool
 endif
 
@@ -112,6 +113,7 @@ map <F2> :NERDTreeMirrorToggle<CR>
 
 "Toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 "toggle paste mode
 set pastetoggle=<F3>
@@ -122,6 +124,7 @@ map ,r <Esc>:YRShow<CR>
 "toggle CtrlP
 let g:ctrlp_map = ',e'
 let g:ctrlp_cmd = 'CtrlPMixed'
+nnoremap <leader>t :CtrlPTag<cr>
 
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
