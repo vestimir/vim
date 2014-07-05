@@ -109,6 +109,7 @@ vmap <C-Down> xp`[V`]
 
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
 let g:NERDTreeWinPos = "right"
+let g:NERDTreeChDirMode=1
 map <F2> :NERDTreeMirrorToggle<CR>
 
 "Toggle Tagbar
@@ -140,6 +141,9 @@ let html_no_rendering=1
 
 "open new empty split
 map ,s :vnew<CR>
+
+"open nerdtree bookmark
+map <D-P> :NERDTreeFromBookmark<space>
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
