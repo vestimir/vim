@@ -97,3 +97,9 @@
 [submodule "bundle/switch"]
 	path = bundle/switch
 	url = https://github.com/AndrewRadev/switch.vim
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/vim-i18n"]
+	path = bundle/vim-i18n
+	url = https://github.com/stefanoverna/vim-i18n.git

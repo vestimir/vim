@@ -134,6 +134,9 @@ nmap sk :SplitjoinJoin<cr>
 "Switch map
 nnoremap - :Switch<cr>
 
+"i18n
+vmap <Leader>z :call I18nTranslateString()<CR>
+
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
