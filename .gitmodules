@@ -103,3 +103,9 @@
 [submodule "bundle/vim-i18n"]
 	path = bundle/vim-i18n
 	url = https://github.com/stefanoverna/vim-i18n.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git

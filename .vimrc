@@ -114,7 +114,6 @@ map <F2> :NERDTreeMirrorToggle<CR>
 
 "Toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 "toggle paste mode
 set pastetoggle=<F3>
@@ -147,6 +146,9 @@ map ,s :vnew<CR>
 
 "open nerdtree bookmark
 map <D-P> :NERDTreeFromBookmark<space>
+
+"git blame
+map <Leader>b :Gblame<CR>
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
