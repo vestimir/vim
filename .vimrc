@@ -164,8 +164,6 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 
-call Pl#Theme#RemoveSegment('fileformat')
-
 " Reconfigure vim-seek search key
 let g:SeekKey = '<Space>'
 let g:SeekBackKey = '<S-Space>'
