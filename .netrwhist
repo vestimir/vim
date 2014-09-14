@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/vestimir/dev/clojure/homeworks/01'
 let g:netrw_dirhist_2='/Users/vestimir/.rvm/gems/ruby-1.9.3-p448@banking/gems/airbrake-3.1.12'
+let g:netrw_dirhist_3='/Users/vestimir/dev/web/nasko/.vagrant'
