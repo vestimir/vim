@@ -107,6 +107,9 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeChDirMode=1
