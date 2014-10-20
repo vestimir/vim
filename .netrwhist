@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/vestimir/dev/clojure/homeworks/01'
 let g:netrw_dirhist_2='/Users/vestimir/.rvm/gems/ruby-1.9.3-p448@banking/gems/airbrake-3.1.12'
 let g:netrw_dirhist_3='/Users/vestimir/dev/web/nasko/.vagrant'
+let g:netrw_dirhist_4='/Users/vestimir/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/devise-3.3.0'
+let g:netrw_dirhist_5='/Users/vestimir/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/devise-3.3.0/lib'
+let g:netrw_dirhist_6='/Users/vestimir/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/devise-3.3.0'
+let g:netrw_dirhist_7='/Users/vestimir/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/devise-async-0.9.0'
+let g:netrw_dirhist_8='/Users/vestimir/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/omniauth-salesforce-1.0.4/lib'
+let g:netrw_dirhist_9='/Users/vestimir/dev/os/omniauth-salesforce/lib'

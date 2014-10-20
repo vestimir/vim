@@ -171,6 +171,10 @@ let g:SeekBackKey = '<S-Space>'
 " Config Switch
 nnoremap - :Switch<CR>
 
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
 if has("autocmd")
