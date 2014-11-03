@@ -107,6 +107,10 @@ nmap <C-Down> ddp
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
+"Vmap for maintain Visual Mode after shifting > and <
+vmap < <gv
+vmap > >gv
+
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
