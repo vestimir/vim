@@ -29,10 +29,10 @@ set guioptions-=LlRrb
 
 if !has('gui_running')
   set t_Co=256
-  colorscheme railscasts
+  colo mirodark
 else
   set guifont=Menlo\ Regular:h14
-  colo codeschool
+  colo mirodark
 endif
 
 "sets tabexpand to spaces
