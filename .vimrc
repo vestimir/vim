@@ -26,6 +26,7 @@ set guioptions-=T "remove toolbar
 set guioptions+=b
 set guioptions+=LlRrb
 set guioptions-=LlRrb
+set cursorline
 
 if !has('gui_running')
   set t_Co=256
