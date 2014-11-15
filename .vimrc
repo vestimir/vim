@@ -126,7 +126,9 @@ nmap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 "toggle yankring
-map ,r <Esc>:YRShow<CR>
+map <Leader>r <Esc>:YRShow<CR>
+
+nnoremap <D-A> <Esc>:A<CR>
 
 "toggle CtrlP
 let g:ctrlp_map = ',e'
@@ -149,7 +151,7 @@ imap <C-Space> <C-x><C-o>
 let html_no_rendering=1
 
 "open new empty split
-map ,s :vnew<CR>
+map <Leader>s :vnew<CR>
 
 "open nerdtree bookmark
 map <D-P> :NERDTreeFromBookmark<space>
