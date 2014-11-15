@@ -8,6 +8,10 @@
     git submodule init
     git submodule update
 
+#NeoVim
+
+Just `ln -s` .vimrc to .nvimrc and .vim to .nvim
+
 #Dependencies
 [Ctags](http://ctags.sourceforge.net/)
 
