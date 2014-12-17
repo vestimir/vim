@@ -17,6 +17,7 @@ set copyindent
 set showmatch " set show matching parenthesis
 set foldenable
 set nowrap
+set noro
 
 set mousem=popup
 set mousehide "Hide mouse when typing
