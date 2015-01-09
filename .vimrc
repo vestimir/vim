@@ -19,6 +19,7 @@ set foldenable
 set nowrap
 set noro
 
+set mouse=a
 set mousem=popup
 set mousehide "Hide mouse when typing
 
