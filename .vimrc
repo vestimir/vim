@@ -185,6 +185,10 @@ map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+" vmath
+vmap <expr> ++ VMATH_YankAndAnalyse()
+nmap ++ vip++
+
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
 if has("autocmd")
