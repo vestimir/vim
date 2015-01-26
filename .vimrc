@@ -132,6 +132,7 @@ set pastetoggle=<F3>
 "toggle yankring
 map <Leader>r <Esc>:YRShow<CR>
 
+"Alternate between spec and class
 nnoremap <D-A> <Esc>:A<CR>
 
 "toggle CtrlP
@@ -162,6 +163,9 @@ map <D-P> :NERDTreeFromBookmark<space>
 
 "git blame
 map <Leader>b :Gblame<CR>
+
+"Rextract mapping (vim-rails)
+vmap <Leader>x :Rextract<space>
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
