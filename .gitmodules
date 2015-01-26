@@ -118,3 +118,6 @@
 [submodule "bundle/vim-vmath"]
 	path = bundle/vim-vmath
 	url = https://github.com/DavidGamba/vim-vmath.git
+[submodule "bundle/vim-partial"]
+	path = bundle/vim-partial
+	url = https://github.com/jbgutierrez/vim-partial.git
