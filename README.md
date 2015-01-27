@@ -8,6 +8,8 @@
     git submodule init
     git submodule update
 
+You can update all the submodules to their latest version with `git pull --recurse-submodules`
+
 #NeoVim
 
 Just `ln -s` .vimrc to .nvimrc and .vim to .nvim
