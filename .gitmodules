@@ -121,3 +121,6 @@
 [submodule "bundle/vim-partial"]
 	path = bundle/vim-partial
 	url = https://github.com/jbgutierrez/vim-partial.git
+[submodule "bundle/vim-rbenv"]
+	path = bundle/vim-rbenv
+	url = git://github.com/tpope/vim-rbenv.git
