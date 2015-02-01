@@ -80,8 +80,8 @@ autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
 "change the mapleader from \ to ,
 let mapleader=","
 
-"Map escape key to jj -- much faster
-imap jj <esc>
+"Map escape key to jk -- much faster
+imap jk <esc>
 
 imap ?? <?=?><esc>hi
 imap %% <%=  %><esc>hhi
@@ -139,6 +139,7 @@ nnoremap <D-A> <Esc>:A<CR>
 let g:ctrlp_map = ',e'
 let g:ctrlp_cmd = 'CtrlPMixed'
 nnoremap <leader>t :CtrlPTag<cr>
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 "SplitJoin map
 nmap sj :SplitjoinSplit<cr>
@@ -192,6 +193,9 @@ map g/ <Plug>(incsearch-stay)
 " vmath
 vmap <expr> ++ VMATH_YankAndAnalyse()
 nmap ++ vip++
+
+" open ag.vim
+nnoremap <leader>a :Ag<space>
 
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
