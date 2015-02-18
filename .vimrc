@@ -83,6 +83,9 @@ let mapleader=","
 "Map escape key to jk -- much faster
 imap jk <esc>
 
+map <F1> <Esc>
+imap <F1> <Esc>
+
 imap ?? <?=?><esc>hi
 imap %% <%=  %><esc>hhi
 

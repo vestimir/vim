@@ -124,3 +124,6 @@
 [submodule "bundle/vim-rbenv"]
 	path = bundle/vim-rbenv
 	url = git://github.com/tpope/vim-rbenv.git
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = https://github.com/slim-template/vim-slim.git
