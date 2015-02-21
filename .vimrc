@@ -102,17 +102,14 @@ vmap ,ta :Align =><CR>
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
 
+"Easy navigation between splits
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-l> <c-w>l
+noremap <c-h> <c-w>h
+
 "clear search
 nmap <silent> ,/ :nohlsearch<CR>
-
-"Move
-"http://vimcasts.org/episodes/bubbling-text/
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
-
-"Bubble multiple lines
-vmap <C-Up> xkP`[V`]
-vmap <C-Down> xp`[V`]
 
 "Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
@@ -182,22 +179,22 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 
-" Reconfigure vim-seek search key
+"Reconfigure vim-seek search key
 let g:SeekKey = '<Space>'
 let g:SeekBackKey = '<S-Space>'
 
-" Config Switch
+"Config Switch
 nnoremap - :Switch<CR>
 
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
-" vmath
+"vmath
 vmap <expr> ++ VMATH_YankAndAnalyse()
 nmap ++ vip++
 
-" open ag.vim
+"open ag.vim
 nnoremap <leader>a :Ag<space>
 
 " Source the vimrc file after saving it. This way, you don't have to reload
