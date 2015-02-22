@@ -127,3 +127,9 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
+[submodule "bundle/rbenv-ctags"]
+	path = bundle/rbenv-ctags
+	url = https://github.com/tpope/rbenv-ctags.git
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
