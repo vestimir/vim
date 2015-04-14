@@ -72,7 +72,7 @@ set t_vb=
 set nobackup
 set noswapfile
 
-autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
+"autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
 autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
 
 "shortcuts
@@ -145,6 +145,8 @@ let html_no_rendering=1
 map <Leader>v :vsp<CR>
 map <Leader>x :q<CR>
 
+nnoremap <leader><leader> <c-^>
+
 "open nerdtree bookmark
 map <D-P> :NERDTreeFromBookmark<space>
 
@@ -188,6 +190,14 @@ map <leader>gR :call ShowRoutes()<cr>
 
 nnoremap <leader>a :A<CR>
 nnoremap <leader>s :R<CR>
+
+vmap <Leader>t :call I18nTranslateString()<CR>
+
+"Rspec
+let g:rspec_command = "!bundle exec rspec -I . -f d -c {spec}"
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>A :call RunAllSpecs()<CR>
 
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
