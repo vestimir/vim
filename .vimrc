@@ -72,7 +72,7 @@ set t_vb=
 set nobackup
 set noswapfile
 
-"autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
+autocmd BufEnter * cd %:p:h "Automatically change current directory to that of the file in the buffer
 autocmd BufWritePre * :%s/\s\+$//e "strip trailing whitespace
 
 "shortcuts
@@ -169,7 +169,6 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
 "Rails specific
-map <leader>gr :topleft :split config/routes.rb<cr>
 function! ShowRoutes()
   " Requires 'scratch' plugin
   :topleft 100 :split __Routes__
@@ -193,11 +192,34 @@ nnoremap <leader>s :R<CR>
 
 vmap <Leader>t :call I18nTranslateString()<CR>
 
+"Edit routes
+function! EditRoutes()
+  :Rcd
+  :topleft 30 :split config/routes.rb
+endfunction
+map <leader>gr :call EditRoutes()<cr>
+
 "Rspec
 let g:rspec_command = "!bundle exec rspec -I . -f d -c {spec}"
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>A :call RunAllSpecs()<CR>
+
+function! WrapRunCurrentSpecFile()
+  :Rcd
+  :call RunCurrentSpecFile()
+endfunction
+
+function! WrapRunLastSpec()
+  :Rcd
+  :call RunLastSpec()
+endfunction
+
+function! WrapRunAllSpecs()
+  :Rcd
+  :call RunAllSpecs()
+endfunction
+
+map <Leader>t :call WrapRunCurrentSpecFile()<CR>
+map <Leader>l :call WrapRunLastSpec()<CR>
+map <Leader>A :call WrapRunAllSpecs()<CR>
 
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
