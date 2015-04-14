@@ -83,6 +83,7 @@ let mapleader=","
 "Map escape key to jk -- much faster
 imap jk <esc>
 
+"Disable F1
 map <F1> <Esc>
 imap <F1> <Esc>
 
@@ -91,16 +92,6 @@ imap %% <%=  %><esc>hhi
 
 "Align => with ,ta
 vmap ,ta :Align =><CR>
-
-"Tab navigation like firefox
-:nmap <C-S-tab> :tabprevious<CR>
-:nmap <C-tab> :tabnext<CR>
-:map <C-S-tab> :tabprevious<CR>
-:map <C-tab> :tabnext<CR>
-:imap <C-S-tab> <Esc>:tabprevious<CR>i
-:imap <C-tab> <Esc>:tabnext<CR>i
-:nmap <C-t> :tabnew<CR>
-:imap <C-t> <Esc>:tabnew<CR>
 
 "Easy navigation between splits
 noremap <c-j> <c-w>j
@@ -115,6 +106,9 @@ nmap <silent> ,/ :nohlsearch<CR>
 vmap < <gv
 vmap > >gv
 
+"Current dir as %%
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
@@ -123,17 +117,11 @@ let g:NERDTreeWinPos = "right"
 let g:NERDTreeChDirMode=1
 map <F2> :NERDTreeMirrorToggle<CR>
 
-"Toggle Tagbar
-nmap <F8> :TagbarToggle<CR>
-
 "toggle paste mode
 set pastetoggle=<F3>
 
 "toggle yankring
 map <Leader>r <Esc>:YRShow<CR>
-
-"Alternate between spec and class
-nnoremap <D-A> <Esc>:A<CR>
 
 "toggle CtrlP
 let g:ctrlp_map = ',e'
@@ -148,25 +136,20 @@ nmap sk :SplitjoinJoin<cr>
 "Switch map
 nnoremap - :Switch<cr>
 
-"i18n
-vmap <Leader>z :call I18nTranslateString()<CR>
-
 "Map code completion to Ctrl+Space
 imap <C-Space> <C-x><C-o>
 
 let html_no_rendering=1
 
-"open new empty split
-map <Leader>s :vnew<CR>
+"Splits
+map <Leader>v :vsp<CR>
+map <Leader>x :q<CR>
 
 "open nerdtree bookmark
 map <D-P> :NERDTreeFromBookmark<space>
 
 "git blame
 map <Leader>b :Gblame<CR>
-
-"Rextract mapping (vim-rails)
-vmap <Leader>x :Rextract<space>
 
 "http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 set completeopt=longest,menuone
@@ -179,23 +162,32 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
 
-"Reconfigure vim-seek search key
-let g:SeekKey = '<Space>'
-let g:SeekBackKey = '<S-Space>'
-
-"Config Switch
-nnoremap - :Switch<CR>
-
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
-"vmath
-vmap <expr> ++ VMATH_YankAndAnalyse()
-nmap ++ vip++
+"Rails specific
+map <leader>gr :topleft :split config/routes.rb<cr>
+function! ShowRoutes()
+  " Requires 'scratch' plugin
+  :topleft 100 :split __Routes__
+  " Make sure Vim doesn't write __Routes__ as a file
+  :set buftype=nofile
+  " Delete everything
+  :normal 1GdG
+  " Put routes output in buffer
+  :0r! bundle exec rake -s routes
+  " Size window to number of lines (1 plus rake output length)
+  :exec ":normal " . line("$") . "_ "
+  " Move cursor to bottom
+  :normal 1GG
+  " Delete empty trailing line
+  :normal dd
+endfunction
+map <leader>gR :call ShowRoutes()<cr>
 
-"open ag.vim
-nnoremap <leader>a :Ag<space>
+nnoremap <leader>a :A<CR>
+nnoremap <leader>s :R<CR>
 
 " Source the vimrc file after saving it. This way, you don't have to reload
 " Vim to see the changes.
