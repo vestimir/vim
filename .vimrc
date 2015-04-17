@@ -93,6 +93,16 @@ imap %% <%=  %><esc>hhi
 "Align => with ,ta
 vmap ,ta :Align =><CR>
 
+"Tab navigation like firefox
+:nmap <C-S-tab> :tabprevious<CR>
+:nmap <C-tab> :tabnext<CR>
+:map <C-S-tab> :tabprevious<CR>
+:map <C-tab> :tabnext<CR>
+:imap <C-S-tab> <Esc>:tabprevious<CR>i
+:imap <C-tab> <Esc>:tabnext<CR>i
+:nmap <C-t> :tabnew<CR>
+:imap <C-t> <Esc>:tabnew<CR>
+
 "Easy navigation between splits
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
@@ -142,7 +152,7 @@ imap <C-Space> <C-x><C-o>
 let html_no_rendering=1
 
 "Splits
-map <Leader>v :vsp<CR>
+map <Leader>s :vsp<CR>
 map <Leader>x :q<CR>
 
 nnoremap <leader><leader> <c-^>
@@ -188,7 +198,7 @@ endfunction
 map <leader>gR :call ShowRoutes()<cr>
 
 nnoremap <leader>a :A<CR>
-nnoremap <leader>s :R<CR>
+nnoremap <leader>R :R<CR>
 
 vmap <Leader>t :call I18nTranslateString()<CR>
 
