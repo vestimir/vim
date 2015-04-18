@@ -212,7 +212,11 @@ endfunction
 map <leader>gr :call EditRoutes()<cr>
 
 "Rspec
-let g:rspec_command = "!bundle exec rspec -I . -f d -c {spec}"
+if has('gui_running')
+  let g:rspec_command = "!bundle exec rspec --no-color -I . -f d {spec}"
+else
+  let g:rspec_command = "!bundle exec rspec --color -I . -f d {spec}"
+endif
 
 function! WrapRunCurrentSpecFile()
   :Rcd
