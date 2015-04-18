@@ -146,9 +146,6 @@ nmap sk :SplitjoinJoin<cr>
 "Switch map
 nnoremap - :Switch<cr>
 
-"Map code completion to Ctrl+Space
-imap <C-Space> <C-x><C-o>
-
 let html_no_rendering=1
 
 "Splits
@@ -170,6 +167,11 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+"Map omnicomplete to ctrl+space
+imap <c-space> <c-x><c-o>
+
+set omnifunc=syntaxcomplete#Complete
 
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
