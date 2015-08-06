@@ -48,6 +48,7 @@ set smarttab
 autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 autocmd FileType php set ai sw=4 sts=4 et
 autocmd FileType go set ai ts=4
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 "Split windows below the current window.
 set splitbelow
