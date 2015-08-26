@@ -1,2 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/vestimir/dev/chaos/vrscans/app/assets/stylesheets/admin'
+let g:netrw_dirhist_2='/Users/vestimir/dev/web/dummy'
+let g:netrw_dirhist_3='/Users/vestimir/dotfiles/templates/files'
