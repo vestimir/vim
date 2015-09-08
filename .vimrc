@@ -32,11 +32,12 @@ set cursorline
 
 if !has('gui_running')
   set t_Co=256
-  colo mirodark
 else
   set guifont=Menlo\ Regular:h14
-  colo mirodark
 endif
+
+colo mirodark
+hi NonText ctermfg=black guifg=#121212
 
 "sets tabexpand to spaces
 set linespace=4
@@ -122,6 +123,27 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+
+let g:airline_mode_map = {
+\ '__' : '-',
+\ 'n'  : 'N',
+\ 'i'  : 'I',
+\ 'R'  : 'R',
+\ 'c'  : 'C',
+\ 'v'  : 'V',
+\ 'V'  : 'V',
+\ 's'  : 'S',
+\ 'S'  : 'S',
+\ }
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.branch = '⎇'
 
 let NERDTreeShowHidden=1 "Show hidden files in NerdTree
 let g:NERDTreeWinPos = "right"
